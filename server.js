@@ -4,6 +4,10 @@ const path = require('path');
 const app = express();
 app.use(express.json());
 app.use(express.static("express"));
+app.use('/images', express.static('images'));
+app.get('/video', (req, res) => {
+    res.sendFile('assets/cdj.mp4', { root: __dirname });
+});
 // default URL for website
 app.use('/', function(req,res){
     res.sendFile(path.join(__dirname+'/express/index.html'));
