@@ -1,4 +1,4 @@
-# Takuya's Homepage
+# darkomedia's Homepage
 
 [https://www.craftz.dog/](https://www.craftz.dog/)
 

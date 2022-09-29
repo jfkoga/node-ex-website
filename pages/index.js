@@ -19,7 +19,7 @@ import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import thumbInkdrop from '../public/images/works/afrodancer01.png'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -34,7 +34,7 @@ const Home = () => (
           <Heading as="h3" variant="page-title">
             darkomedia
           </Heading>
-          <p>DJ / Designer  </p>
+          <p>DJ/Designer </p>
           
         </Box>
         <Box
@@ -66,29 +66,38 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Bio
+          DJ
         </Heading>
         <Paragraph>
-            darkomedia nace conceptualmente allá por el 2003, en el bar musical <i>Funàmbul</i>. Además de encargarse de la producción de la actividad cultural, dota al local 
-            de identidad propia, por medio de una cuidada selección de hilos musicales basados en <i>funk, soul, hiphop y electronica alternativa</i>. La programación de la agenda cultural del espacio, le pone en contacto con multitud de artistas
-            y dj's, profundizando en diversos sonidos de los 60s <i>(garage, surf, early reggae y ska primigenio</i>. 
+            darkomedia nace conceptualmente en los 2000, aunque la curiosidad musical llenó mis estanterías desde mi más temprana infancia: cassettes de R&B, rap, maxmix, postpunk y techno.
+            Por el 2005, al entrar a gestionar el bar musical <i>Funàmbul (L'Hospitalet)</i>, me hago cargo de la producción de la actividad cultural. Con el objectivo de darle al local 
+            una identidad propia, se define un concepto sonoro basado en hilos musicales de <i>funk, soul, electronica ambiental y bandas sonoras</i>. 
+            La continua interacción con los djs y colectivos que actuarán en el local, me permiten conocer otros estilos, profundizando especialmente en sonidos <i>garage, surf rock, northern soul, early reggae y ska.</i> 
         </Paragraph>   
         <br/>
         <Paragraph>         
-          Poco tiempo después pasa a formar parte del staff de cabina en la Salamandra, en la que sigue moldeando su amalgama sonora, gracias a unas sesiones, únicas por su eclecticismo, que programa la sala: desde sonidos del mundo, como la cumbia, rumba, brazilian y latin grooves, pasando por el rock alternativo y electrónica de club
-            En paralelo a la residencia en Salamandra, continua pinchando en diversos locales: Bajo el aka Joe Perenne, colabora con el colectivo/club Back To The Sixties Jungle, especialistas en sonidos de los 60 y adictos al vinilo. Esta experiencia resulta todo un master exhaustivo en los esenciales de allnighter soul, garage y surf rock.
-            La participación como percusionista en la banda Mampön, introduce un nuevo universo sonoro a su maleta personal: afrobeat, afrofunk y jazz etíope
-            Con una escueta colección de vinilos, basada por los estilos anteriormente mencionados, cuenta con una sección especialmente dedicada a las bandas sonoras y a sonidos disco(balearic, cosmic, tropical, afrodisco...)
-          <NextLink href="/works/inkdrop" passHref scroll={false}>
-            <Link>Inkdrop</Link>
+          En 2009 paso a formar parte de la cabina en la sala 
+          <NextLink href="https://www.salamandra.cat" passHref>
+            <Link target="_blank"> Salamandra</Link>
           </NextLink>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <NextLink href="https://www.youtube.com/devaslife" passHref>
-            <Link target="_blank">Dev as Life</Link>
-          </NextLink>
-          &quot; has more than 100k subscribers.
+           , como dj residente. Única en su especie por el eclecticismo y el espíritu innovador de sus sesiones, la sala resulta una auténtica enciclopedia de géneros musicales: desde <i>indie</i> y <i>electrónica alternativa</i>, hasta <i>global grooves</i>:<i>cumbia, reggae, rumba, brazil y latin</i>. Mantendrá su residencia hasta 2016.
+        </Paragraph>       
+        <br/>
+        <Paragraph>        
+            La incorporación como percusionista a la banda <i>Mampön</i> en 2012, introduce un nuevo universo sonoro a su maleta personal: <i>afrobeat, afrofunk y jazz etíope</i>.
         </Paragraph>
+        <br/>
+        <Paragraph>        
+            En paralelo a la residencia en <i>Salamandra</i>, continué pinchando en diversos locales: <i>Depósito Legal</i> <i>La Resistencia</i>, <i>Lennon's</i> (L'Hospitalet), <i>Arrikitown (Cornellà)</i>...
+            Colaboré con el colectivo <i>Back To The Sixties Jungle</i>, especialistas en sonidos de los <i>60</i> y adictos al vinilo, pinchando en las fiestas que mensualmente celebraban en los locales <i>Barbara Ann y Sala Upload</i>.
+            De 2014 a 2016 estuve pinchando asiduamente en <i>Balboa (Sabadell)</i>, y visité puntualmente espacios como <i>La Masia</i>.
+        </Paragraph>
+        <br/>
+        <Paragraph>        
+        He participado en diversas ediciones del evento <i>L'Hospitalet Experience</i>, dentro del marco del <i>Mobile World Congress Barcelona</i>. Más recientemente, he amenizado diversas veladas gastronómicas del restaurante <i>Centric (El Prat)</i>.
+        </Paragraph>
+
+      
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
@@ -98,29 +107,6 @@ const Home = () => (
         </Box>
       </Section>
 
-      <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
-          Bio
-        </Heading>
-        <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
-        </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
-        </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
-        </BioSection>
-        <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
-        </BioSection>
-      </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
@@ -185,13 +171,7 @@ const Home = () => (
           </GridItem>
         </SimpleGrid>
 
-        <Box align="center" my={4}>
-          <NextLink href="/posts" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Popular posts
-            </Button>
-          </NextLink>
-        </Box>
+
       </Section>
     </Container>
   </Layout>
@@ -199,3 +179,4 @@ const Home = () => (
 
 export default Home
 export { getServerSideProps } from '../components/chakra'
+
